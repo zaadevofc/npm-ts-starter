@@ -1,0 +1,44 @@
+{
+  "name": "npm-ts-starter",
+  "description": "TS/JS Npm Package Starter",
+  "author": {
+    "name": "zaadevofc",
+    "email": "zaadevofc@gmail.com",
+    "url": "https://github.com/zaadevofc"
+  },
+  "version": "0.25.1-dev",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/zaadevofc/npm-ts-starter",
+  "funding": "https://ko-fi.com/zaadevofc",
+  "bugs": {
+    "url": "https://github.com/zaadevofc/npm-ts-starter/issues"
+  },
+  "repository": {
+    "url": "git+https://github.com/zaadevofc/npm-ts-starter.git"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test:dev": "ts-node-dev src/test",
+    "test": "ts-node src/test",
+    "docs": "npx typedoc",
+    "prod": "tsup && npm publish"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [],
+  "contributors": [
+    "zaadevofc@gmail.com"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node-dev": "latest",
+    "ts-node": "latest",
+    "tsup": "^8.0.2",
+    "typedoc": "^0.25.13",
+    "typescript": "^5.4.5"
+  }
+}
